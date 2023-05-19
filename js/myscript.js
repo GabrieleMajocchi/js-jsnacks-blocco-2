@@ -39,8 +39,10 @@ win = false
                 if(number === rightNumber){
                     document.getElementById('result').innerHTML = 'Complimenti hai azzeccato il numero! <br> Con un totale di:'+i+' tentativi';
                     win = true
-                }else{
-                    document.getElementById('result').innerHTML = 'Numero errato, sei al tentativo numero: '+i;
+                }else if (number < rightNumber){
+                    document.getElementById('result').innerHTML = 'Numero errato, il numero da indovinare è più alto, sei al tentativo numero: '+i;
+                }else if (number > rightNumber){
+                    document.getElementById('result').innerHTML = 'Numero errato, il numero da indovinare è più basso, sei al tentativo numero: '+i;
                 }
             }
         }
