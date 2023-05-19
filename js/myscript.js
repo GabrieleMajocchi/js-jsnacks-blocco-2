@@ -30,18 +30,18 @@ win = false
     sendit.addEventListener('click', 
         function(){
             if(win == false){
-            i++;
+                i++;
 
-            let number = document.getElementById('number').value;
+                let number = document.getElementById('number').value;
 
-            number = parseInt(number);
+                number = parseInt(number);
 
-            if(number === rightNumber){
-                document.getElementById('result').innerHTML = 'Complimenti hai azzeccato il numero! <br> Con un totale di:'+i+' tentativi';
-                win = true
-            }else{
-                document.getElementById('result').innerHTML = 'Numero errato, sei al tentativo numero: '+i;
+                if(number === rightNumber){
+                    document.getElementById('result').innerHTML = 'Complimenti hai azzeccato il numero! <br> Con un totale di:'+i+' tentativi';
+                    win = true
+                }else{
+                    document.getElementById('result').innerHTML = 'Numero errato, sei al tentativo numero: '+i;
+                }
             }
-        }
         }
     )
