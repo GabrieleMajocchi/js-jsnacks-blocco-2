@@ -78,7 +78,8 @@ let secondword = prompt('inserisci una parola');
 function check (v1, v2){
     if(v1 == v2){
         return true;
-    }return false
+    }
+    return false
 }
 
 let samelenght = check(firstword.length, secondword.length);
