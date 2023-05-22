@@ -79,12 +79,12 @@ function check (v1, v2){
     if(v1 == v2){
         return true;
     }
-    return false
+    return false;
 }
 
 let samelenght = check(firstword.length, secondword.length);
 
-if( samelenght){
+if(samelenght){
     console.log(firstword+' '+secondword);
 }else if(firstword.length < secondword.length){
     console.log(secondword);
