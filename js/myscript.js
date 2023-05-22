@@ -16,34 +16,55 @@
 // }
 
 
-let rightNumber = Math.floor(Math.random() * 100) + 1;
+// ----Secondo snack----
 
-console.log(rightNumber)
+// let rightNumber = Math.floor(Math.random() * 100) + 1;
 
-const Sendit = document.querySelector('button');
+// console.log(rightNumber)
 
-let i = 0;
+// const Sendit = document.querySelector('button');
 
-win = false
+// let i = 0;
+
+// win = false
 
 
-    sendit.addEventListener('click', 
-        function(){
-            if(win == false){
-                i++;
+//     sendit.addEventListener('click', 
+//         function(){
+//             if(win == false){
+//                 i++;
 
-                let number = document.getElementById('number').value;
+//                 let number = document.getElementById('number').value;
 
-                number = parseInt(number);
+//                 number = parseInt(number);
 
-                if(number === rightNumber){
-                    document.getElementById('result').innerHTML = 'Complimenti hai azzeccato il numero! <br> Con un totale di:'+i+' tentativi';
-                    win = true
-                }else if (number < rightNumber){
-                    document.getElementById('result').innerHTML = 'Numero errato, il numero da indovinare è più alto, sei al tentativo numero: '+i;
-                }else if (number > rightNumber){
-                    document.getElementById('result').innerHTML = 'Numero errato, il numero da indovinare è più basso, sei al tentativo numero: '+i;
-                }
-            }
-        }
-    )
+//                 if(number === rightNumber){
+//                     document.getElementById('result').innerHTML = 'Complimenti hai azzeccato il numero! <br> Con un totale di:'+i+' tentativi';
+//                     win = true
+//                 }else if (number < rightNumber){
+//                     document.getElementById('result').innerHTML = 'Numero errato, il numero da indovinare è più alto, sei al tentativo numero: '+i;
+//                 }else if (number > rightNumber){
+//                     document.getElementById('result').innerHTML = 'Numero errato, il numero da indovinare è più basso, sei al tentativo numero: '+i;
+//                 }
+//             }
+//         }
+//     )
+
+
+// ---terzo Snack---
+
+let numbers = 0;
+
+const numamm = 10;
+
+for (let i = 1 ; i <= 10 ; i++){
+    numbers = numbers + i;
+    console.log(numbers);
+}
+
+const media = numbers / numamm;
+
+console.log('Il totale dei numeri è; '+numbers);
+console.log('la media dei numeri è: '+ media);
+
+
