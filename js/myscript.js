@@ -53,18 +53,40 @@
 
 // ---terzo Snack---
 
-let numbers = 0;
+// let numbers = 0;
 
-const numamm = 10;
+// const numamm = 10;
 
-for (let i = 1 ; i <= 10 ; i++){
-    numbers = numbers + i;
-    console.log(numbers);
+// for (let i = 1 ; i <= 10 ; i++){
+//     numbers = numbers + i;
+//     console.log(numbers);
+// }
+
+// const media = numbers / numamm;
+
+// console.log('Il totale dei numeri è; '+numbers);
+// console.log('la media dei numeri è: '+ media);
+
+
+
+// ----quarto Snack----
+
+let firstword = prompt('inserisci una parola');
+
+let secondword = prompt('inserisci una parola');
+
+function check (v1, v2){
+    if(v1 == v2){
+        return true;
+    }return false
 }
 
-const media = numbers / numamm;
+let samelenght = check(firstword.length, secondword.length);
 
-console.log('Il totale dei numeri è; '+numbers);
-console.log('la media dei numeri è: '+ media);
-
-
+if( samelenght){
+    console.log(firstword+' '+secondword);
+}else if(firstword.length < secondword.length){
+    console.log(secondword);
+}else{
+    console.log(firstword);
+}
