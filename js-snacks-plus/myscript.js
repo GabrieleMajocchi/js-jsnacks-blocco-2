@@ -9,6 +9,14 @@ function generate (){
 const numberofli = parseInt(prompt('Quanti li vuoi?'));
 
 for(let i = 0; i < numberofli; i++){
-    generate();
-    ul.append(li);
+
+    const lielement = generate();
+    
+    lielement.addEventListener('click',
+    function(){
+        lielement.classList.toggle('sbarrato');
+    }
+    )
+
+    ul.append(lielement);
 }
