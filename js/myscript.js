@@ -69,25 +69,52 @@
 
 
 
-// ----quarto Snack----
+// // ----quarto Snack----
 
-let firstword = prompt('inserisci una parola');
+// let firstword = prompt('inserisci una parola');
 
-let secondword = prompt('inserisci una parola');
+// let secondword = prompt('inserisci una parola');
 
-function check (v1, v2){
-    if(v1 == v2){
-        return true;
-    }
-    return false;
+// function check (v1, v2){
+//     if(v1 == v2){
+//         return true;
+//     }
+//     return false;
+// }
+
+// let samelenght = check(firstword.length, secondword.length);
+
+// if(samelenght){
+//     console.log(firstword+' '+secondword);
+// }else if(firstword.length < secondword.length){
+//     console.log(secondword);
+// }else{
+//     console.log(firstword);
+// }
+
+
+// ----quinto snack----
+
+function random(){
+    let random = Math.floor(Math.random() * 5) + 1;
+    return random;
 }
 
-let samelenght = check(firstword.length, secondword.length);
+let array = [];
+let i = 0;
 
-if(samelenght){
-    console.log(firstword+' '+secondword);
-}else if(firstword.length < secondword.length){
-    console.log(secondword);
-}else{
-    console.log(firstword);
+nocopy()
+
+function nocopy(){
+    
+    while (i < 4){
+        
+        let randomm = random()
+        if (array[0] !== randomm && array[1] !== randomm && array[2] !== randomm && array[3] !== randomm){
+            i++;
+            array.push(randomm);
+            console.log(randomm);
+            console.log(array)
+        }
+    }
 }
