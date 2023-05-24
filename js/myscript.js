@@ -97,7 +97,7 @@
 let array = [];
 let i = 0;
 
-nocopy()
+nocopy(5);
 
 
 //------------------
@@ -105,20 +105,17 @@ nocopy()
 //------------------
 
 /**
- * A function that will add 4 random number that are not the same between them
+ * A function that will add an ammoun of random number that are not the same between them based on how many elements we ask
  */
-function nocopy(){
+function nocopy(elements){
     
-    while (i < 4){
-        
+    while (array.length < elements){
         let randomm = random(1,5)
-        if (array[0] !== randomm && array[1] !== randomm && array[2] !== randomm && array[3] !== randomm){
-            i++;
+        if (!array.includes(randomm)){
             array.push(randomm);
-            console.log(randomm);
-            console.log(array)
         }
     }
+    console.log(array)
 }
 
 /**
