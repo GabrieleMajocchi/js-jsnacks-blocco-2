@@ -94,22 +94,24 @@
 
 
 // ----quinto snack----
-
-function random(){
-    let random = Math.floor(Math.random() * 5) + 1;
-    return random;
-}
-
 let array = [];
 let i = 0;
 
 nocopy()
 
+
+//------------------
+// ----Functions----
+//------------------
+
+/**
+ * A function that will add 4 random number that are not the same between them
+ */
 function nocopy(){
     
     while (i < 4){
         
-        let randomm = random()
+        let randomm = random(1,5)
         if (array[0] !== randomm && array[1] !== randomm && array[2] !== randomm && array[3] !== randomm){
             i++;
             array.push(randomm);
@@ -117,4 +119,12 @@ function nocopy(){
             console.log(array)
         }
     }
+}
+
+/**
+ * A function that will return a random number that are between max and min
+ */
+function random(min, max){
+    let random = Math.floor(Math.random() * max) + min;
+    return random;
 }
