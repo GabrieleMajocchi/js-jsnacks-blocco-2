@@ -28,9 +28,9 @@ function randomNum (min, max){
 
 function randStr(lenght) {
     const list = "ABCDEFGHIJKLMNPQRSTUVWXYZ";
-    var res = "";
-    for(var i = 0; i < lenght; i++) {
-        var rnd = Math.floor(Math.random() * list.length);
+    let res = "";
+    for(let i = 0; i < lenght; i++) {
+        let rnd = Math.floor(Math.random() * list.length);
         res = res + list.charAt(rnd);
     }
     return res;
@@ -39,9 +39,9 @@ function randStr(lenght) {
 
 function randNum(lenght) {
     const list = "123456789";
-    var res = "";
-    for(var i = 0; i < lenght; i++) {
-        var rnd = Math.floor(Math.random() * list.length);
+    let res = "";
+    for(let i = 0; i < lenght; i++) {
+        let rnd = Math.floor(Math.random() * list.length);
         res = res + list.charAt(rnd);
     }
     return res;
