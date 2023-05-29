@@ -7,14 +7,15 @@ peperonis.push(randomPeperoni(pepType));
 }
 
 console.log(peperonis)
+
 // ---Generate random stats---
 
 
 function randomPeperoni (listoftype){
     const peperone = {};
     peperone.type = randomtype(listoftype);
-    peperone.weight = randomNum(1, 20);
-    peperone.lenght = randomNum(10, 40);
+    peperone.weight = randomNum(100, 200)+' gr';
+    peperone.lenght = randomNum(10, 15)+' cm';
     return peperone;
 }
 
