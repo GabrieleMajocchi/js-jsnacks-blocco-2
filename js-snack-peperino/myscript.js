@@ -8,6 +8,13 @@ peperonis.push(randomPeperoni(pepType));
 
 console.log(peperonis)
 
+let totalweight = 0;
+
+for (i=0; i<peperonis.length; i++){
+    totalweight += parseInt(peperonis[i].weight);
+}
+
+console.log(totalweight+' gr');
 // ---Generate random stats---
 
 
