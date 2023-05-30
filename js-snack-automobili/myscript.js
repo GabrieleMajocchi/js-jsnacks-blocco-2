@@ -1,9 +1,11 @@
 
 const cars = []
 const fuel = ['benzina', 'diesel', 'gpl', 'elettrico', 'metano'];
+const brand = ['Ferrari', 'Lamborghini', 'Porsche', 'Fiat', 'Alfa Romeo']
+
 
 for (i=0; i<15; i++){
-    cars.push(randomcar(fuel));
+    cars.push(randomcar(fuel, brand));
 }
 
 console.log(cars);
@@ -42,10 +44,10 @@ console.log(other);
 // ---Generate random stats---
 
 
-function randomcar (listoftype){
+function randomcar (carfuel, carbrand){
     const car = {};
-    car.fuel = randomtype(listoftype);
-    car.brand = 'feeerari';
+    car.fuel = randomtype(carfuel);
+    car.brand = randomtype(carbrand);
     car.model = 'supa fast';
     return car;
 }
