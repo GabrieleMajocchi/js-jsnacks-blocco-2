@@ -31,13 +31,7 @@ cars.forEach(element => {
 
 console.log(diesel);
 
-let other = [];
-
-cars.forEach(element => {
-    if(element.fuel !== 'diesel' && element.fuel !== 'benzina'){
-        other.push(element);
-    }
-});
+let other = cars.filter(car => car.fuel !== 'diesel' && car.fuel !== 'benzina');
 
 console.log(other);
 
@@ -54,7 +48,7 @@ function randomcar (carfuel, carbrand){
 
 
 function randomtype (listoftype){
-    const number = Math.floor(Math.random() * 4) + 0
+    const number = Math.floor(Math.random() * 5) + 0
     const type = listoftype[number]
     return type;
 }
